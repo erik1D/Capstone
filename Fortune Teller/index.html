@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: #9754CB;">
+    <!-- this is the start of content -->
+    <h1 style="color: #DEACF5;">
+      Fortune Teller
+    </h1>
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield" style="color: #DEACF5;">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="Your Name" required>
+      <br>
+      <label for="questionfield" style="color: #DEACF5;">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="A Yes or No Question">
+      <br>
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
