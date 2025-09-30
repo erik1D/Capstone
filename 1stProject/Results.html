@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+        }
+
+        .Header {
+            width: 100%;
+            height: 100px;
+            display: block;
+            padding-top: 30px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        @font-face {
+            font-family: "StretchPro";
+            src: url(StretchPro.otf);
+        }
+
+        @font-face {
+            font-family: "Nexa-Heavy";
+            src: url(Nexa-Heavy.ttf);
+        }
+
+        h1 {
+            font-family: "StretchPro";
+            color: #4b90f8;
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-family: Nexa-Heavy;
+            text-align: center;
+            position: relative;
+            top: 30px;
+        }
+
+        h4 {
+            font-family: Nexa-Heavy;
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+    </style>
+    <!-- Header -->
+    <div class="Header">
+        <h1>
+            <a href="InteractivePage.html" style="color: #4b90f8; text-decoration: none;">Air-Ik Airlines</a>
+        </h1>
+
+        <span style="float: right;">
+            <h1 style="margin: 0;">
+                <a href="LoginProject.html"
+                    style="color: #4b90f8; text-decoration: none; font-family: Nexa-Heavy; padding-right: 20px;">Sign Out
+                </a>
+            </h1>
+        </span>
+    </div>
+    <!-- Review -->
+    <h2>Review</h2>
+    <h4>
+        <ul>
+            <ol>Tickets: 1 <br>
+                From: San Francisco International Airport <br>
+                To: London City Airport <br>
+                Month: December <br>
+                Week: 52, 22-28 <br>
+                Time of Departure: 12:30 PM <br>
+                Class: First-Class <br>
+                Total: $2,340 <br>
+        </ul>
+        </ol>
+    </h4>
 </body>
+
 </html>

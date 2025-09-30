@@ -1,18 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        h1{            
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        body {
+            background-image: url(blue-sky-full-clouds.jpg);
+            background-size: cover;
+        }
+
+        @font-face {
+            font-family: "StretchPro";
+            src: url(StretchPro.otf);
+        }
+
+        @font-face {
+            font-family: "Nexa";
+            src: url(Nexa-ExtraLight.ttf);
+        }
+
+        @font-face {
+            font-family: "Nexa-Heavy";
+            src: url(Nexa-Heavy.ttf);
+        }
+
+        h1 {
+            font-family: "StretchPro";
             color: #4b90f8;
-            background-color: rgb(230, 230, 230);
+            margin-left: 20px;
+            display: inline-block;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            font-size: larger;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+        }
+
+        .Header {
+            width: 100%;
+            height: 100px;
+            display: block;
+            padding-top: 30px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        form {
+            position: relative;
+            text-align: center;
+            top: 500px;
+        }
+
+        input[type=number] {
+            padding: 20px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        input[type=month] {
+            padding: 19px;
+            border-radius: 5px;
+        }
+
+        input[type=week] {
+            padding: 19px;
+            border-radius: 5px;
+        }
+
+        input[type=time] {
+            padding: 19px;
+            border-radius: 5px;
+        }
+
+        input[type=submit] {
+            font-family: "Nexa-Heavy";
+            font-size: 15px;
+            color: black;
+            margin-top: 30px;
+            padding: 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        select {
+            padding: 20px;
+            border-radius: 5px;
         }
     </style>
-    <h1>Air-Ik Airlines</h1>
+
+    <div class="Header" style="position: relative;">
+        <h1 style="display: inline-block;">
+            <a href="InteractivePage.html" style="color: #4b90f8; text-decoration: none;">Air-Ik Airlines</a>
+        </h1>
+        <a href="LoginProject.html" style="position: absolute; right: 20px; top: 30px; font-family: Nexa-Heavy; color: #4b90f8; text-decoration: none; font-size: 20px;">Sign Out</a>
+    </div>
+
+    <h3 style="font-family: Nexa;">Welcome! Please Select your travel information</h1>
+        <!-- Form -->
+        <form action="Results.html" method="get">
+            <input type="number" min="0" max="9" placeholder="Ticket" required>
+            <!-- From -->
+            <select name="fromAirports" id="fromSelect" required>
+                <option value="" disabled selected>From</option>
+                <option value="SFO">San Francisco International Airport</option>
+                <option value="OAK">Oakland San Francisco Bay Airport</option>
+            </select>
+            <!-- Destinations -->
+            <select name="toAirports" id="toSelect" required>
+                <option value="" disabled selected>To</option>
+                <option value="LAX">Los Angeles International Airport</option>
+                <option value="HNL">Daniel K. Inouye International Airport</option>
+                <option value="JFK">John F. Kennedy International Airport</option>
+                <option value="LCY">London City Airport</option>
+                <option value="CDG">Paris Charles de Gaulle Airport</option>
+                <option value="HKG">Hong Kong International Airport</option>
+                <option value="SIN">Singapore Changi Airport</option>
+                <option value="ICN">Incheon International Airport</option>
+                <option value="HND">Haneda Airport</option>
+                <option value="CPT">Cape Town International Airport</option>
+            </select>
+            <!-- Selects -->
+            <input type="month" name="monthDate" id="monthID" min="2025-01" max="2026-12" required>
+            <input type="week" min="2025-W02" max="2026-W52" required>
+            <input type="time" required>
+            <!-- Radio -->
+            <br>
+            <br>
+            <label for="class1" style="font-family: Nexa; color: white;">Select Travel Class:</label>
+            <br><br>
+
+            <!-- Radio options -->
+            <input type="radio" name="travelClass" id="class1" value="Economy" required>
+            <label for="class1" style="font-family: Nexa; padding-right: 20px; color: white;">Economy</label>
+
+            <input type="radio" name="travelClass" id="class2" value="Business">
+            <label for="class2" style="font-family: Nexa; padding-right: 20px; color: white;">Business</label>
+
+            <input type="radio" name="travelClass" id="class3" value="First">
+            <label for="class3" style="font-family: Nexa; color: white;">First Class</label>
+
+            </div>
+            <br>
+            <input type="submit" value="Done">
+        </form>
+
 </body>
+
 </html>

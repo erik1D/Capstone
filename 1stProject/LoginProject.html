@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        form{
+        @font-face {
+            font-family: "StretchPro";
+            src: url(StretchPro.otf);
+        }
+
+        form {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-top: 80px;
             margin-left: 600px;
@@ -20,21 +27,24 @@
             border-radius: 40px;
             padding: 50px;
         }
-        input[type=email]{
+
+        input[type=email] {
             border: none;
             background-color: rgb(245, 245, 245);
             border-bottom: 1px solid black;
             margin-bottom: 20px;
         }
-        input[type=password]{
+
+        input[type=password] {
             border: none;
             background-color: rgb(245, 245, 245);
-            border-bottom: 1px solid black;     
+            border-bottom: 1px solid black;
             margin-bottom: 20px;
 
         }
-        input[type=submit]{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        input[type=submit] {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 15px;
             color: rgb(255, 255, 255);
             background-color: #4b90f8;
@@ -47,31 +57,43 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        input[type=checkbox]{
+
+        input[type=checkbox] {
             accent-color: #4b90f8;
         }
-        h1{
+
+        h1 {
             color: #4b90f8;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: "StretchPro";
         }
-        h3{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin-top: 60px;
         }
-        p{
+
+        p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        img {
+            display: block;
+            margin: auto;
+        }
     </style>
+    <!-- Header -->
     <h1 style="text-align: center;">Air-Ik Airlines</h1>
     <p style="text-align: center;">Welcome! It seems like you don't have an account, please sign up here.</p>
+    <img src="airplane.png" alt="" height="150">
+    <!-- Form -->
     <form action="InteractivePage.html" method="get">
         <h3 style="text-align: center;">Register</h3>
         <br>
-        <label for="login1" style="padding-right: 60px;">Login:</label>        
-        <input type="email" name="emailInput" id="login1">
+        <label for="login1" style="padding-right: 60px;">Login:</label>
+        <input type="email" name="emailInput" id="login1" required>
         <br>
         <label for="login2" style="padding-right: 30px;">Password:</label>
-        <input type="password" name="passInput" id="login2">
+        <input type="password" name="passInput" id="login2" required>
         <br>
         <input type="checkbox" name="checkInput" id="login3">
         <label for="login3">Remember Me</label>
@@ -79,4 +101,5 @@
         <input type="submit" name="submitInput" id="login4" value="Sign up">
     </form>
 </body>
+
 </html>
