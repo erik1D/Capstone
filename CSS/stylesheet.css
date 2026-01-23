@@ -1,40 +1,40 @@
-      body {
-        background-color: aquamarine;
-      }
+body {
+  background-color: aquamarine;
+}
 
-      h1 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        border: 5px;
-        border-style: dotted;
-        color: rgb(255, 18, 180);
-      }
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border: 5px;
+  border-style: dotted;
+  color: rgb(255, 18, 180);
+}
 
-      img {
-        border: 5px;
-        border-color: blueviolet;
-        border-style: ridge
-      }
+img {
+  border: 5px;
+  border-color: blueviolet;
+  border-style: ridge
+}
 
-      p {
-        border: 5px;
-        border-color: rgb(237, 255, 71);
-        border-style: groove;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: rgb(76, 64, 169);
-        text-align: center;
-      }
+p {
+  border: 5px;
+  border-color: rgb(237, 255, 71);
+  border-style: groove;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(76, 64, 169);
+  text-align: center;
+}
 
-      #img2 {
-        width: 300px;
-        border: 15px;
-        border-color: rgb(255, 71, 227);
-        border-style: ridge;
-      }
+#img2 {
+  width: 300px;
+  border: 15px;
+  border-color: rgb(255, 71, 227);
+  border-style: ridge;
+}
 
-      #img3 {
-        width: 300px;
-        border: 15px;
-        border-color: rgb(71, 157, 255);
-        border-style: groove;
-      }
+#img3 {
+  width: 300px;
+  border: 15px;
+  border-color: rgb(71, 157, 255);
+  border-style: groove;
+}
